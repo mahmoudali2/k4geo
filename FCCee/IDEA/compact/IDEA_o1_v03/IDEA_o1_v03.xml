@@ -86,20 +86,21 @@
     </field>
 
     <field name="CompensatingSolenoidZplus" type="solenoid"
-           inner_field="-SolenoidField -SolenoidField * QD0_min_z / ( QD0_min_z - CompSol_min_z)"
+           inner_field="-1.7*tesla"
            outer_field="0*tesla"
-           zmax="QD0_min_z"
-           zmin="CompSol_min_z"
-           outer_radius="20*cm">
+           zmax="1000*cm"
+           zmin="Solenoid_Coil_half_length"
+           outer_radius="1000*cm">
     </field>
 
     <field name="CompensatingSolenoidZminus" type="solenoid"
-           inner_field="-SolenoidField -SolenoidField * QD0_min_z / ( QD0_min_z - CompSol_min_z)"
+           inner_field="-1.7*tesla"
            outer_field="0*tesla"
-           zmin="-QD0_min_z"
-           zmax="-CompSol_min_z"
-           outer_radius="20*cm">
+           zmax="-Solenoid_Coil_half_length"
+           zmin="-1000*cm"
+           outer_radius="1000*cm">
     </field>
   </fields>
 
 </lccdd>
+
