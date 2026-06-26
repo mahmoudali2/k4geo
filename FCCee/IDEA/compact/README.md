@@ -56,3 +56,24 @@ April 2025: Added the dual-readout segmented crystal ECAL
 
 February 2026: Added the neighborhood finding algorithm for the crystal dual-readout calorimeter.
 April 2026: Switch to vertex detector and silicon wrapper from IDEA_o1_v04.
+
+IDEA_o1_v05
+------------
+
+Based on o1_v04, with an updated muon system. All other sub-detectors are identical to o1_v04.
+
+June 2026: Introduced MuonSystem_o1_v02 (hosted in IDEA_o2_v02/) — a 4-layer muRWELL layout with 3 iron
+yokes of 500 mm thickness each (compared to 3 layers and 300 mm in o1_v01). The additional layer and the
+increased yoke thickness extend the sensitive decay-length coverage to ~6 m, making this configuration
+better suited for long-lived particle searches (e.g. Heavy Neutral Leptons decaying to displaced dimuon
+vertices at FCC-ee Z-pole).
+
+
+IDEA_o2_v02
+------------
+
+Based on o2_v01, hosting MuonSystem_o1_v02 and applying the same muon system update to option 2.
+The inner tracker and calorimeter system are identical to o2_v01. Vertex detector and silicon wrapper
+are taken from IDEA_o1_v05.
+
+June 2026: Introduced MuonSystem_o1_v02 — identical change as described for IDEA_o1_v05 above.
